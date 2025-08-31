@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Circular Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stopwatch-container">
+    <h1>STOPWATCH</h1>
+
+    <div class="circle">
+      <div class="time">
+        <span id="hours">00</span><span class="label">h</span> :
+        <span id="minutes">00</span><span class="label">m</span> :
+        <span id="seconds">00</span><span class="label">s</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="start">START</button>
+      <button id="pause" disabled>STOP</button>
+      <button id="reset" disabled>RESET</button>
+      <button id="lap" disabled>LAP</button>
+    </div>
+
+    <ul id="laps" class="laps"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
